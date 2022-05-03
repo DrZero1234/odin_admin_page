@@ -42,6 +42,10 @@ html {
 
 }
 
+.dashboard-main a {
+    text-decoration: none;
+}
+
 .dashboard-main .card {
     background-color: var(--dark);
     padding: 20px;
