@@ -54,7 +54,36 @@ html {
 
 .dashboard-header {
     display: grid;
-    grid-area: header
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 2fr;
+    grid-area: header;
+}
+
+.dashboard-header > div {
+    padding-left: 20px;
+}
+
+.header-upper {
+    display: flex;
+    align-items: center;
+}
+
+.header-upper.left input {
+    flex:1;
+    height:2rem;
+}
+
+
+
+.header-bottom {
+    display: flex;
+}
+
+.header-bottom.left {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
 }
 
 .dashboard-sidebar > .dashboard-brand {
