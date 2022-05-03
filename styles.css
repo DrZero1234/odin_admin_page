@@ -7,6 +7,7 @@
 :root  {
     --dark: #191c24;
     --black: #18181B;
+    --profile-blue: #BAE6FD;
 }
 
 html {
@@ -79,6 +80,7 @@ html {
     grid-area: trending;
 }
 
+
 .dashboard-updates {
     grid-area: updates;
 }
@@ -95,4 +97,14 @@ div {
     text-align: center;
     height: 100px;
     width: 100px;
+}
+
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.default {
+    background-color: var(--profile-blue);
 }
