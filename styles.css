@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Oswald:wght@600&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -11,7 +13,8 @@
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Koulen",cursive;
+    font-size: 18px;
     color: #F3F4F6;
     background: var(--dark);
 }
@@ -60,13 +63,10 @@ html {
     
 }
 
-.dashboard-header * {
+.dashboard-header > div {
     gap: 20px;
     padding: 3px;
-}
-
-.dashboard-header > div {
-    padding-left: 20px;
+    margin: 5px 30px;
 }
 
 .header-upper {
@@ -96,7 +96,8 @@ html {
     background-color: #60A5FA;
     border: none;
     color: #E2E8F0;
-    font-weight: 700
+    font-weight: bold;
+    font-size: 20px;
 }
 
 
