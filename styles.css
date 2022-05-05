@@ -15,8 +15,12 @@
 html {
     font-family: "Koulen",cursive;
     font-size: 18px;
-    color: #F3F4F6;
+    color: #D4D4D8;
     background: var(--dark);
+}
+
+div {
+    text-align: center;
 }
 
 .dashboard-cotaniner {
@@ -60,6 +64,7 @@ html {
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr 2fr;
     grid-area: header;
+    border-bottom: 2px solid #52525B;
     
 }
 
@@ -148,10 +153,7 @@ html {
 
 
 
-div {
-    text-align: center;
-    border: 1px solid black;
-}
+
 
 #icon-placeholder {
     background-color: green;
