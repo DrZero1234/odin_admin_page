@@ -29,6 +29,14 @@ img {
     height: 36px;
 }
 
+.dashboard-sidebar,
+.dashboard-header,
+.dashboard-main,
+.dashboard-trending,
+.dashboard-updates {
+    background-color: var(--dark);
+}
+
 .dashboard-cotaniner {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
@@ -36,7 +44,8 @@ img {
                          "sidebar main updates"
                          "sidebar main trending"
                          "footer footer footer";
-    gap: 40px;
+    background-color: var(--black);
+    gap: 20px;
     
 }
 
@@ -64,15 +73,15 @@ img {
 
 .dashboard-header > div {
     gap: 20px;
-    padding: 3px;
+    padding: 20px 3px 3px 3px;
     margin: 5px 30px;
 }
 
 .header-upper {
     display: flex;
-    align-items: center;
     font-size: 24px;
 }
+
 
 
 .header-upper.right {
@@ -129,7 +138,7 @@ img {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-area: main;
-    background: #111111;
+    background: var(--black);
     gap: 20px;
 }
 
@@ -142,6 +151,7 @@ img {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .dashboard-main h3 {
@@ -150,7 +160,6 @@ img {
 
 .card-icons {
     display: flex;
-    border: 1px solid white;
     justify-content: flex-end;
     align-items: center;
     gap: 15px;
@@ -177,7 +186,9 @@ img {
 .dashboard-footer {
     grid-area: footer;
     background-color: #171717;
-    color: white
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
 }
 
 .dashboard-trending {
