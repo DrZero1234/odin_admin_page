@@ -36,6 +36,7 @@ img {
                          "sidebar main updates"
                          "sidebar main trending"
                          "footer footer footer";
+    gap: 40px;
     
 }
 
@@ -47,24 +48,7 @@ img {
     grid-area: sidebar;
 }
 
-.dashboard-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-area: main;
-    background: #111111;
-    gap: 20px;
 
-
-}
-
-.dashboard-main a {
-    text-decoration: none;
-}
-
-.dashboard-main .card {
-    background-color: var(--dark);
-    padding: 20px;
-}
 
 .dashboard-header {
     display: grid;
@@ -139,6 +123,41 @@ img {
 .header-bottom.right {
     justify-content: flex-end;
     align-items: center;
+}
+
+.dashboard-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-area: main;
+    background: #111111;
+    gap: 20px;
+}
+
+.dashboard-main a {
+    text-decoration: none;
+}
+
+.dashboard-main .card {
+    background-color: var(--dark);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-main h3 {
+    font-size: 28px;
+}
+
+.card-icons {
+    display: flex;
+    border: 1px solid white;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.card-icons img:hover {
+    background-color: #7C3AED
 }
 
 
