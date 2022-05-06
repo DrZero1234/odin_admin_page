@@ -21,6 +21,12 @@ html {
 
 div {
     text-align: center;
+    /*border: 2px solid white;*/
+}
+
+img {
+    width: 36px;
+    height: 36px;
 }
 
 .dashboard-cotaniner {
@@ -48,6 +54,7 @@ div {
     background: #111111;
     gap: 20px;
 
+
 }
 
 .dashboard-main a {
@@ -64,7 +71,10 @@ div {
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr 2fr;
     grid-area: header;
-    border-bottom: 2px solid #52525B;
+    border-bottom: 5px solid #52525B;
+    font-weight: 800;
+    
+
     
 }
 
@@ -77,6 +87,7 @@ div {
 .header-upper {
     display: flex;
     align-items: center;
+    font-size: 24px;
 }
 
 
@@ -96,18 +107,26 @@ div {
 
 .dashboard-header button {
     height: 40px;
-    width: 90px;
+    width: 105px;
     border-radius: 30px;
     background-color: #60A5FA;
     border: none;
     color: #E2E8F0;
     font-weight: bold;
     font-size: 20px;
+    cursor: pointer;
+}
+
+
+.dashboard-header button:hover{
+    background-color: #E2E8F0;
+    color: #60A5FA;
 }
 
 
 .header-bottom {
     display: flex;
+
 }
 
 .header-bottom.left {
