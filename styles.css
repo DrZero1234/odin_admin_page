@@ -39,7 +39,7 @@ img {
 
 .dashboard-cotaniner {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
     grid-template-areas: "sidebar header header"
                          "sidebar main updates"
                          "sidebar main trending"
@@ -136,11 +136,12 @@ img {
 
 .dashboard-main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-area: main;
     background: var(--black);
     gap: 20px;
 }
+
 
 .dashboard-main a {
     text-decoration: none;
@@ -152,10 +153,15 @@ img {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    gap: 10px;
+    border-left: 12px solid #352A69;
+
+    /* 2B2257 */
 }
 
 .dashboard-main h3 {
     font-size: 28px;
+    text-align: left;
 }
 
 .card-icons {
@@ -163,10 +169,11 @@ img {
     justify-content: flex-end;
     align-items: center;
     gap: 15px;
+    margin-top: 36px;
 }
 
 .card-icons img:hover {
-    background-color: #7C3AED
+    background-color: #352A69
 }
 
 
