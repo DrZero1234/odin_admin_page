@@ -26,7 +26,7 @@ div {
 
 */
 
-img {
+svg {
     width: 36px;
     height: 36px;
 }
@@ -216,8 +216,9 @@ img {
     margin-top: 36px;
 }
 
-.card-icons img:hover {
-    background-color: #352A69
+.card-icons svg:hover {
+    background-color: #352A69;
+    cursor: pointer;
 }
 
 
