@@ -18,11 +18,13 @@ html {
     color: #D4D4D8;
     background: var(--dark);
 }
-
+/*
 div {
     text-align: center;
-    /*border: 2px solid white;*/
+    /*border: 2px solid white;
 }
+
+*/
 
 img {
     width: 36px;
@@ -155,8 +157,6 @@ img {
     flex-wrap: wrap;
     gap: 10px;
     border-left: 12px solid #352A69;
-
-    /* 2B2257 */
 }
 
 .dashboard-main h3 {
@@ -190,6 +190,48 @@ img {
     grid-template-rows: auto;
 }
 
+
+
+
+
+
+.dashboard-updates {
+    grid-area: updates;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 5px 20px;
+}
+
+.dashboard-updates .update {
+    text-align: left;
+    border-bottom: 2px solid grey;
+}
+
+.update:last-child {
+    border: 0;
+
+}
+
+.dashboard-trending {
+    grid-area: trending;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+
+
+}
+
+.trending-user {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
 .dashboard-footer {
     grid-area: footer;
     background-color: #171717;
@@ -197,16 +239,6 @@ img {
     text-decoration: none;
     font-size: 30px;
 }
-
-.dashboard-trending {
-    grid-area: trending;
-}
-
-
-.dashboard-updates {
-    grid-area: updates;
-}
-
 
 
 
