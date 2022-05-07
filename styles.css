@@ -41,7 +41,7 @@ svg {
 
 .dashboard-cotaniner {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
     grid-template-areas: "sidebar header header"
                          "sidebar main updates"
                          "sidebar main trending"
@@ -61,6 +61,7 @@ svg {
 .dashboard-brand {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 36px;
     flex-wrap: wrap;
     font-weight: 900;
@@ -182,7 +183,7 @@ svg {
 
 .dashboard-main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     grid-area: main;
     background: var(--black);
     gap: 20px;
@@ -249,6 +250,7 @@ svg {
     flex-wrap: wrap;
     overflow-x: scroll;
     padding: 5px 20px;
+    height: fit-content;
 }
 
 .trending-user {
